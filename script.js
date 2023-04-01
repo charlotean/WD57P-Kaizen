@@ -1,5 +1,6 @@
 console.log("Hello World!");
 
+// 1.
 let person = {
     firstName: "John",
     lastName: "Smith",
@@ -7,23 +8,47 @@ let person = {
     hobbies: [
         "Biking",
         "Mountain Climbing",
-        "Swimming"
+        "Swimming",
+        "eating",
+        "sleeping",
+        "bingewatching"
     ]
 }
-console.log(`First Name: ${person.firstName}`);
-console.log(`Last Name: ${person.lastName}`);
-console.log(`Age: ${person.age}`);
-console.log(`Hobbies: ${person.hobbies[0]}, ${person.hobbies[1]}, ${person.hobbies[2]}`);
-console.log("Work Address:");
-
-const city = 'Lincoln'
+const city = "Lincoln";
 const houseNumber = 32;
-const state = 'Nebraska';
-const street = 'Washington';
-function userInformation (age) {
-    console.log(`John Smith is ${age} years of age`);
+const state = "Nebraska";
+const street = "Washington";
+function userInformation (person, city, houseNumber, state, street) {
+    console.log(`First Name: ${person.firstName}`);
+    console.log(`Last Name: ${person.lastName}`);
+    console.log(`Age: ${person.age}`);
+    console.log(`Hobbies: ${person.hobbies[0]}, ${person.hobbies[1]}, ${person.hobbies[2]}`);
+    console.log(`city: ${city}`);
+    console.log(`house Number: ${houseNumber}`);
+    console.log(`state: ${state}`);
+    console.log(`street: ${street}`);
 }
-function userInformation (hobbies) {
-    console.log(`John Smith likes ${hobbies[0]}, ${hobbies[1]}, ${hobbies[2]}`);
+userInformation(person);
+
+console.log(`${person.firstName} ${person.lastName} is ${person.age} years of age`);
+
+function otherHobbies (person) {
+    console.log(`His hobbies are: ${person.hobbies[3]},${person.hobbies[4]},${person.hobbies[5]}`);
 }
-//function userInformation
+otherHobbies(person);
+
+function address (city, houseNumber, state, street) {
+    console.log(`city: ${city}`);
+    console.log(`house Number: ${houseNumber}`);
+    console.log(`state: ${state}`);
+    console.log(`street: ${street}`);
+}
+address(city, houseNumber, state, street);
+
+let isMarried = false;
+function checkStatus (isMarried) {
+    isMarried = true;
+    console.log(`The value of isMarried is:`);
+    console.log(isMarried);
+}
+checkStatus(isMarried);
