@@ -14,7 +14,7 @@ let person = {
         "bingewatching"
     ]
 }
-const city = "Lincoln";
+const city = "Lincoln"; // shows up as undefined. currently working on this
 const houseNumber = 32;
 const state = "Nebraska";
 const street = "Washington";
